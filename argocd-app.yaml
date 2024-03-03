@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd-app
+  namespace: argocd
+spec:
+  destination:
+    namespace: podinfo
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    repoURL: https://github.com/kirilxd/thesisCD-infra
+    path: test
+    targetRevision: main
