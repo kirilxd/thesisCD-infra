@@ -1,1 +1,1 @@
-# thesisCD-iinfra
+# thesisCD-infra
